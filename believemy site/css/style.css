@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Cabin:ital,wght@0,400..700;1,400..700&family=Noto+Sans+KR:wght@100..900&family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", serif;
+}
+body {
+    background-color: rgba(240, 236, 236, 0.445);
+}
+
+img {
+    width: 100%;
+}
+
+nav a, nav li {
+    color: rgba(0, 0, 0, 0.778);
+    font-weight: 700;
+    font-size: 17px;
+    background-color: rgba(172, 163, 153, 0.166);
+    text-shadow: 2px 2px rgba(255, 255, 255, 0.74);
+    border-radius: 20%;
+    text-transform: uppercase;
+}
+nav a:hover, nav li {
+    color: red;    
+    }
+
+h1 {
+    font-size: 90px;
+    font-family: "pacifico", cursive;
+    color: white;
+    text-shadow: -5px -9px 10px black;
+}
+ul {
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    gap: 50px;    
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Noto Sans KR", cursive;
+    margin: 20px 0 10px;
+    text-align: center;
+    color: grey;
+}
+h3{
+    text-align: center;
+
+}
+
+#slogan{
+    font-size: 90px;
+    font-family: "pacifico", cursive;
+    color: white;
+    text-shadow: -5px -9px 10px black;
+    display: block;
+    font-size: 30px;
+    font-family: "roboto", arial, sans-sérief;
+}
+
+footer {
+    background: left/100px url("https://wallpapercave.com/wp/wp9417798.jpg"), #EBF2FA;
+    background-size: cover;
+    padding: 15px;
+    font-size: 14px;
+    margin: 10px;
+    color: rgba(255, 255, 255, 0.747);
+    text-shadow: 2px 2px black;
+    border-radius: 50px;
+    box-shadow: color-mix(in hsl shorter hue, black 20%, red 40%);
+}
+
+a {
+    text-decoration: none;
+}
+
+.titre-h2  {
+    color: red;
+    text-shadow: 0 0 30px black;
+    text-align: center;
+    font-size: 40px;
+    font-weight:900;
+    letter-spacing: 5px;
+    margin: 0;
+    padding: 30px;
+} 
+
+.nous-contacter {
+    background-color: rgba(0, 255, 255, 0.081);
+    text-align: center;
+    margin: 5% 15%;
+    padding: 2% 20%;
+    border: 7px solid rgb(253 3 3 / 66%);
+    border-radius: 50px 10px 50px 10px;
+    box-shadow: -2px -3px 16px 9px rgb(159 0 255 / 5);
+    
+}
+
+.accueil {
+    display: block;
+    padding: 30px 5px;
+    text-decoration: underline;
+    color: red;
+}
+.accueil:hover {
+    color: white;
+    background-color: blueviolet;
+    box-shadow: -2px -3px 16px 9px rgb(159 0 255 / 5);
+    /* margin-top: 60px;
+    margin-bottom: 40px; */
+    border-radius: 50%;
+}
+
+#top {
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-decoration:underline;
+    color: grey;
+}
+
+.article-h2{
+    font-size:20px;
+}
+p{
+    color: rgb(84, 76, 76);
+    text-align: center;
+    margin: 0 50px 0 30px;
+}
+
+
+
+#flexbox-ville {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.ville-1-column{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    height: 100%;
+    
+}
+
+.ville-2-column{
+    display: flex;
+    width: 66%;
+    height: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.ville {
+    position: relative;
+    padding: 1rem;
+}
+
+.ville > a {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    font-size: 40px;
+    color: white;
+    text-shadow: 0 0 30px black;
+}
+
+.ville > a:hover{
+    font-size: 50px;
+    margin: 20px;
+    padding-bottom: 30px;
+    transition: ease-in 0.5s;
+    transform: scale(1.2);
+}
+
+
+.ville > a > img{
+    object-fit: cover;
+    height: 100%;
+    border-radius: 20px; 
+}
+
+.ville_title {
+    position: absolute;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center; 
+}
+
+.tokyo{
+    height: 940px;
+    margin: auto;
+}
+#tokyoimage{
+    background-image: url("../images/page2/edo-tokyo-japon.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    height: 400px;
+}
+a.bulle-image { 
+    position:relative;
+    color: blue ;
+    text-decoration:none;
+    font-family:arial, verdana, sans-serif;
+    text-align:center;
+    font-size: large;
+    }
+    
+    a.bulle-image:hover {
+    background: none;
+    z-index: 50; 
+    }
+    
+    a.bulle-image span {
+    display: none;
+    }
+    
+    a.bulle-image:hover span {
+    display: block;
+    position: absolute;
+    top: -215px; 
+    left: -60px; 
+    font-family:chalkboard,verdana, sans-serif;
+    text-align:center;
+    font-size:17px;
+    color:#F9EC00;
+    font-weight:normal;
+    padding: 3px;
+    width: 300px;
+    height: 215px;
+    }
+
+a.bulle-image1 { 
+    position:relative;
+    color: blue ;
+    text-decoration:none;
+    font-family:arial, verdana, sans-serif;
+    text-align:center;
+    font-size: large;
+    }
+    
+    a.bulle-image1:hover {
+    background: none;
+    z-index: 50; 
+    }
+    
+    a.bulle-image1 span {
+    display: none;
+    }
+    
+    a.bulle-image1:hover span {
+    display: block;
+    position: absolute;
+    top: -110px; 
+    left: -25px; 
+    font-family:chalkboard,verdana, sans-serif;
+    text-align:center;
+    font-size:17px;
+    color:#F9EC00;
+    font-weight:normal;
+    padding: 2;
+    width: 370px;
+    height: 110px;
+    }
+
+a[href="#mabulle"]
+    {
+        font-size: large;
+    text-decoration: none;
+    background-color: white;
+    color: white;
+}
+a[href="#mabulle"]:hover{
+    cursor: help;
+}
+a[href="#mabulle"] + sub{
+    bottom: auto;
+    line-height: inherit;
+    display: none;
+    position: absolute;
+    font-size: inherit;
+    color: darkblue;
+    text-align: justify;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+    margin: 10px 10px;
+    padding: 10px;
+    padding-left: 50px;
+    border:1px solid #0000AA;
+    background: white ;
+}
+a[href="#mabulle"]:hover + sub{
+    display: inline;
+}
+.para {
+    padding: 15px;
+    margin-bottom: 40px;
+    border: double  100px;
+    border-image-source: url("../images/page2/bamboo.jpg");
+    border-image-slice: 200;
+    border-image-repeat: norepeat;
+    box-shadow: 5px 5px 15px 15px inset #0842ef93;
+    border-radius: 15%;
+}
+
+.kyoto{
+    width: 100%;
+    height: 470px;
+}
+#kyotoimage{
+    background-image: url("../images/page2/carte-des-rues-de-kyoto-mkn219.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    height: 400px;
+}
+
+.osaka, .nara{
+    width: 50%;
+    height: 470px;
+}
+#osakaimage{
+    background-image: url("../images/page2/carteosaka.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    height: 400px;
+}
+#naraimage{
+    background-image: url("../images/page2/history-of-nara-city-768x544.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    height: 400px;
+}
+
+#voir {
+    display: inline-flex; 
+    align-items: center; 
+    color:red; 
+    font-weight: 700;
+}
+
+#voir:hover {
+    gap: 10px;
+    text-shadow: 2px 1px rgb(163, 161, 161);
+    
+}
+
+#flexbox-foot {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
+#logo-foot {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+    gap: 25px;
+    font-size: 17px;
+}
+/* #voir:visited {
+    font-weight: bold;
+} */
+
+.contenu {
+    padding: 10px;
+}
+
+#Bienvenue {
+    background-image: url("../images/page1/femme-kimono.webp");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    height: 650px;
+}
+
+#avionpoké {
+    background-image: url("../images/page2/avionenvoirplus-1.png");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    height: 650px;
+}
+
+#image{
+        background-image: url("../images/page2/Mont\ Fuji.jpg");
+        background-repeat: no-repeat;
+        background-size:cover;
+        background-position: center;
+        width: 100%;
+        display: flex;
+        align-items:center;
+        height: 400px;
+    }
+
+ .containers  {
+    padding: 0 0 0 10px;
+}
+
+/*le responsive design */
+
+
+    
+/* 1300 : notebook */
+@media all and (max-width: 1700px) and (min-width:800px) {
+    
+    .ville-1-column{
+        width: 100%;
+    }
+
+    .ville-2-column{
+        width: 100%;
+    }
+
+    .tokyo {
+        width: 50%;
+        height: 470px; 
+    }
+    .kyoto {
+        width: 75%;
+        margin: 0 10% 0 12%;
+    }
+
+    .osaka{
+        width: 50%;
+        margin: 0 10% 0 25%;
+    }
+    .nara{
+        width: 75%;
+        margin: 0 10% 0 12%;
+    }
+    
+    #image {
+        width: 100%;
+        height: auto;
+}
+}
+
+/* 768: tablette */
+@media all and (max-width: 800px) and (min-width:550px) {
+    
+    .ville-1-column{
+        width: 100%;
+    }
+
+    .ville-2-column{
+        width: 100%;
+    }
+
+    .tokyo {
+        width: 60%;
+        height: 470px;
+        display: flex;
+        flex-direction: row-reverse;
+    
+    }
+
+    .osaka, .nara{
+        width: 100%;
+    }
+    
+    #flexbox-foot {
+        flex-direction: column;
+    }
+    #image {
+        width: 100%; 
+        height: auto;
+    }
+}
+
+/* 480 : smartphone */
+@media all and (max-width: 550px) {
+    .ville-1-column{
+        width: 100%;
+    }
+
+    .ville-2-column{
+        width: 100%;
+    }
+
+    .tokyo {
+        width: 55%;
+        height: 470px;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .osaka, .nara{
+        width: 100%;
+    }
+
+   #logo-foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+   #image {
+    width: auto;
+    height: auto;
+   }
+}
